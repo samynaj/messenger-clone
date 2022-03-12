@@ -1,8 +1,23 @@
+import Online from "../online/Online"
 import "./rightbar.css"
 
 function Rightbar() {
   return (
-    <div className="rightbar">Rightbar</div>
+    <div className="rightbar">
+      <div className="rightbarWrapper">
+        <div className="birthdayContainer">
+          <img src="assets/gift.png" alt="" className="birthdayImg" />
+          <span className="birthdayText">
+            <b>Palmer Jones</b> and <b>3 other friends</b> have their birthday today.
+          </span>
+        </div>
+        <img src="assets/ad.png" alt="" className="rightbarAd" />
+        <h4 className="rightbarTitle">Online Friends</h4>
+        <ul className="rightbarFriendList">
+          <Online />
+        </ul>
+      </div>
+    </div>
   )
 }
 
