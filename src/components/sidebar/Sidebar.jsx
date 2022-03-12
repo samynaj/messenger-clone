@@ -1,5 +1,6 @@
 import "./sidebar.css"
 import { Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline } from '@mui/icons-material'
+import Friend from "../friend/Friend"
 
 function Sidebar() {
   return (
@@ -46,26 +47,7 @@ function Sidebar() {
             <button className="sidebarButton">Show More</button>
             <hr className="sidebarHr" />
             <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="person" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Jane Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="person" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Jane Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="person" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Jane Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="person" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Jane Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpeg" alt="person" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Jane Doe</span>
-                </li>
+                <Friend />
             </ul>
         </div>
     </div>
